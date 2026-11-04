@@ -1,0 +1,66 @@
+==============================================================================
+GAUSSIAN TISSUE MODELS  (fitted on all three training subjects)
+  healthy voxels 1427173   lesion voxels 36864   empirical lesion prior 0.02518
+
+  MODEL A - single bivariate Gaussian per class, features (T1n, T2n)
+    healthy  mean [0.49697, 0.49351]  corr -0.332
+             cov  [[0.05223, -0.015878], [-0.015878, 0.04376]]
+    lesion   mean [0.5748, 0.708]  corr -0.697
+             cov  [[0.015912, -0.011845], [-0.011845, 0.018153]]
+
+  MODEL B - healthy as a 3-component mixture (one per tissue)
+    comp 0  w 0.574  mean (T1 0.602, T2 0.401)  corr -0.457
+    comp 1  w 0.206  mean (T1 0.490, T2 0.497)  corr +0.504
+    comp 2  w 0.221  mean (T1 0.230, T2 0.733)  corr -0.669
+    EM iterations 34   mean log-likelihood 0.7134
+
+==============================================================================
+LEAVE-ONE-SUBJECT-OUT TUNING  (models never see the scored subject)
+
+  MODEL A (single Gaussian healthy)
+    mean LOSO Dice, rows = beta, cols = tau
+                0.0    1.0    2.0    3.0    4.0    5.0    6.0
+    beta 0.00 0.000  0.000  0.409  0.436  0.298  0.198  0.138
+    beta 0.25 0.000  0.000  0.385  0.490  0.338  0.220  0.149
+    beta 0.50 0.000  0.000  0.361  0.511  0.356  0.232  0.156
+    beta 1.00 0.000  0.000  0.291  0.521  0.374  0.243  0.162
+    beta 1.50 0.000  0.000  0.271  0.514  0.383  0.249  0.165
+    beta 2.00 0.000  0.000  0.276  0.505  0.386  0.252  0.167
+    beta 3.00 0.000  0.000  0.277  0.498  0.383  0.255  0.170
+    BEST: beta 1.00  tau 3.0  mean LOSO Dice 0.5214
+
+  MODEL B (mixture healthy)
+    mean LOSO Dice, rows = beta, cols = tau
+                0.0    1.0    2.0    3.0    4.0    5.0    6.0
+    beta 0.00 0.166  0.433  0.439  0.366  0.294  0.227  0.171
+    beta 0.25 0.057  0.446  0.479  0.398  0.320  0.247  0.185
+    beta 0.50 0.038  0.439  0.503  0.416  0.336  0.259  0.194
+    beta 1.00 0.030  0.412  0.523  0.437  0.351  0.272  0.203
+    beta 1.50 0.030  0.361  0.521  0.447  0.361  0.279  0.208
+    beta 2.00 0.030  0.333  0.516  0.448  0.366  0.284  0.212
+    beta 3.00 0.030  0.330  0.494  0.445  0.370  0.290  0.217
+    BEST: beta 1.00  tau 2.0  mean LOSO Dice 0.5231
+
+==============================================================================
+LEAVE-ONE-SUBJECT-OUT RESULTS at the chosen settings
+
+  MODEL A   beta=1.00  tau=3.0
+    mp_aitm5157.2002-09-19     MAP Dice 0.3330 sens 0.820 ppv 0.209 | MRF Dice 0.3740 sens 0.661 ppv 0.261 | lesions 30/54  FP 139
+    mp_cyra4454.1999-08-23     MAP Dice 0.5369 sens 0.723 ppv 0.427 | MRF Dice 0.6000 sens 0.565 ppv 0.639 | lesions 65/172  FP 123
+    mp_toml5255.1999-08-16     MAP Dice 0.4385 sens 0.933 ppv 0.287 | MRF Dice 0.5901 sens 0.886 ppv 0.442 | lesions 63/112  FP 267
+    mean Dice  without MRF 0.4361   with MRF 0.5214   (+0.0852)
+
+  MODEL B   beta=1.00  tau=2.0
+    mp_aitm5157.2002-09-19     MAP Dice 0.3276 sens 0.687 ppv 0.215 | MRF Dice 0.3652 sens 0.533 ppv 0.278 | lesions 27/54  FP 170
+    mp_cyra4454.1999-08-23     MAP Dice 0.5403 sens 0.685 ppv 0.446 | MRF Dice 0.6018 sens 0.558 ppv 0.653 | lesions 70/172  FP 139
+    mp_toml5255.1999-08-16     MAP Dice 0.4484 sens 0.907 ppv 0.298 | MRF Dice 0.6022 sens 0.889 ppv 0.455 | lesions 65/112  FP 306
+    mean Dice  without MRF 0.4388   with MRF 0.5231   (+0.0843)
+
+==============================================================================
+TEST SEGMENTATION  -  MODEL B (mixture), beta=1.00, tau=2.0, models fitted on all 3 subjects
+  detected lesion voxels : 57909   = 165.68 ml
+  connected clusters     : 860  (737 with >= 3 voxels)
+  ICM                    : 8 iterations, converged=False, changes [51462, 11913, 3321, 1171, 470, 177, 59, 31]
+  brain volume           : 1829.4 ml   lesion load 9.06% of brain
+
+wrote C:\Users\sohan\OneDrive\Documents\Likitha\Practical assignment 6\outputs\03_models.json

@@ -1,0 +1,153 @@
+{
+  "training": [
+    {
+      "id": "mp_aitm5157.2002-09-19",
+      "shape": [
+        256,
+        256,
+        50
+      ],
+      "dtype_t1": "float32",
+      "dtype_t2": "float32",
+      "voxel_size_mm": [
+        0.9766,
+        0.9766,
+        3.0
+      ],
+      "voxel_volume_ml": 0.0028610231765924254,
+      "t1_min": -3.552713678800501e-15,
+      "t1_max": 100.0,
+      "t2_min": 0.0,
+      "t2_max": 100.0,
+      "t1_mean_nonzero": 7.02,
+      "t2_mean_nonzero": 17.91,
+      "t1_p99": 34.77,
+      "t2_p99": 75.69,
+      "nonzero_voxels": 1997847,
+      "has_lesion_mask": true,
+      "lesion_mask_values": [
+        -6.661338147750939e-15,
+        0.0,
+        6.8833827526759706e-15,
+        7.105427357601002e-15,
+        1.0
+      ],
+      "lesion_voxels": 4612,
+      "lesion_volume_ml": 13.2,
+      "lesion_fraction_of_nonzero": 0.002308,
+      "lesion_T1_mean": 24.35,
+      "lesion_T2_mean": 57.56,
+      "nonlesion_T1_mean": 8.8,
+      "nonlesion_T2_mean": 17.82
+    },
+    {
+      "id": "mp_cyra4454.1999-08-23",
+      "shape": [
+        256,
+        256,
+        50
+      ],
+      "dtype_t1": "float32",
+      "dtype_t2": "float32",
+      "voxel_size_mm": [
+        0.9766,
+        0.9766,
+        3.0
+      ],
+      "voxel_volume_ml": 0.00286102294921875,
+      "t1_min": -3.552713678800501e-15,
+      "t1_max": 100.0,
+      "t2_min": 0.0,
+      "t2_max": 100.0,
+      "t1_mean_nonzero": 7.63,
+      "t2_mean_nonzero": 21.01,
+      "t1_p99": 38.14,
+      "t2_p99": 77.81,
+      "nonzero_voxels": 1997330,
+      "has_lesion_mask": true,
+      "lesion_mask_values": [
+        -1.4210854715202004e-14,
+        -1.7763568394002505e-15,
+        0.0,
+        6.217248937900877e-15,
+        1.0
+      ],
+      "lesion_voxels": 15078,
+      "lesion_volume_ml": 43.14,
+      "lesion_fraction_of_nonzero": 0.007549,
+      "lesion_T1_mean": 24.51,
+      "lesion_T2_mean": 62.41,
+      "nonlesion_T1_mean": 9.49,
+      "nonlesion_T2_mean": 20.69
+    },
+    {
+      "id": "mp_toml5255.1999-08-16",
+      "shape": [
+        256,
+        256,
+        50
+      ],
+      "dtype_t1": "float32",
+      "dtype_t2": "float32",
+      "voxel_size_mm": [
+        0.9766,
+        0.9766,
+        3.0
+      ],
+      "voxel_volume_ml": 0.00286102294921875,
+      "t1_min": -3.552713678800501e-15,
+      "t1_max": 100.0,
+      "t2_min": 0.0,
+      "t2_max": 100.0,
+      "t1_mean_nonzero": 8.96,
+      "t2_mean_nonzero": 18.82,
+      "t1_p99": 42.5,
+      "t2_p99": 75.02,
+      "nonzero_voxels": 1990278,
+      "has_lesion_mask": true,
+      "lesion_mask_values": [
+        -1.7763568394002505e-15,
+        0.0,
+        0.9960784316062927,
+        1.0,
+        1.003921627998352,
+        2.0
+      ],
+      "lesion_voxels": 17199,
+      "lesion_volume_ml": 49.21,
+      "lesion_fraction_of_nonzero": 0.008642,
+      "lesion_T1_mean": 29.78,
+      "lesion_T2_mean": 58.56,
+      "nonlesion_T1_mean": 11.19,
+      "nonlesion_T2_mean": 18.47
+    }
+  ],
+  "testing": [
+    {
+      "id": "mp_royr6403.1998-12-07",
+      "shape": [
+        256,
+        256,
+        50
+      ],
+      "dtype_t1": "float32",
+      "dtype_t2": "float32",
+      "voxel_size_mm": [
+        0.9766,
+        0.9766,
+        3.0
+      ],
+      "voxel_volume_ml": 0.00286102294921875,
+      "t1_min": -3.552713678800501e-15,
+      "t1_max": 100.0,
+      "t2_min": 0.0,
+      "t2_max": 100.0,
+      "t1_mean_nonzero": 8.95,
+      "t2_mean_nonzero": 21.71,
+      "t1_p99": 31.66,
+      "t2_p99": 75.73,
+      "nonzero_voxels": 2057771,
+      "has_lesion_mask": false
+    }
+  ]
+}

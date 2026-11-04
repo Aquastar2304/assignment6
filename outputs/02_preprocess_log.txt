@@ -1,0 +1,6 @@
+mp_aitm5157.2002-09-19     brain  448174 vox = 1282.2 ml  (53.8% of head)  otsu 23.33  WM anchor T1 26.71 T2 36.79 -> median 0.869/1.127   lesion  4598 in brain /  4598 total  (100.0% retained)
+mp_cyra4454.1999-08-23     brain  502580 vox = 1437.9 ml  (59.0% of head)  otsu 25.89  WM anchor T1 28.73 T2 41.42 -> median 0.831/1.142   lesion 15068 in brain / 15076 total  (100.0% retained)
+mp_toml5255.1999-08-16     brain  513283 vox = 1468.5 ml  (60.5% of head)  otsu 23.47  WM anchor T1 31.84 T2 37.71 -> median 0.896/1.126   lesion 17198 in brain / 17199 total  (100.0% retained)
+mp_royr6403.1998-12-07     brain  639426 vox = 1829.4 ml  (63.9% of head)  otsu 23.10  WM anchor T1 28.88 T2 38.96 -> median 0.807/1.087
+
+wrote C:\Users\sohan\OneDrive\Documents\Likitha\Practical assignment 6\outputs\02_preprocess.json and arrays to C:\Users\sohan\OneDrive\Documents\Likitha\Practical assignment 6\work

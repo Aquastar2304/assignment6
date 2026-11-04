@@ -1,0 +1,559 @@
+{
+  "config": {
+    "train": [
+      "mp_aitm5157.2002-09-19",
+      "mp_cyra4454.1999-08-23",
+      "mp_toml5255.1999-08-16"
+    ],
+    "test": "mp_royr6403.1998-12-07",
+    "zooms": [
+      0.9765625,
+      0.9765625,
+      3.0
+    ],
+    "healthy_components": 3,
+    "betas": [
+      0.0,
+      0.25,
+      0.5,
+      1.0,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "taus": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      5.0,
+      6.0
+    ],
+    "seed": 0
+  },
+  "models_all_training": {
+    "n_healthy_voxels": 1427173,
+    "n_lesion_voxels": 36864,
+    "prior_lesion": 0.02518,
+    "model_A_healthy": {
+      "mean": [
+        0.49697,
+        0.49351
+      ],
+      "cov": [
+        [
+          0.05223,
+          -0.015878
+        ],
+        [
+          -0.015878,
+          0.04376
+        ]
+      ],
+      "correlation": -0.3321
+    },
+    "model_A_lesion": {
+      "mean": [
+        0.5748,
+        0.708
+      ],
+      "cov": [
+        [
+          0.015912,
+          -0.011845
+        ],
+        [
+          -0.011845,
+          0.018153
+        ]
+      ],
+      "correlation": -0.697
+    },
+    "model_B_healthy_mixture": [
+      {
+        "weight": 0.22083,
+        "mean": [
+          0.2295,
+          0.73336
+        ],
+        "cov": [
+          [
+            0.018449,
+            -0.012706
+          ],
+          [
+            -0.012706,
+            0.019563
+          ]
+        ],
+        "correlation": -0.6688
+      },
+      {
+        "weight": 0.20563,
+        "mean": [
+          0.49002,
+          0.49712
+        ],
+        "cov": [
+          [
+            0.094098,
+            0.044673
+          ],
+          [
+            0.044673,
+            0.083638
+          ]
+        ],
+        "correlation": 0.5036
+      },
+      {
+        "weight": 0.57354,
+        "mean": [
+          0.60215,
+          0.40082
+        ],
+        "cov": [
+          [
+            0.011697,
+            -0.004457
+          ],
+          [
+            -0.004457,
+            0.008143
+          ]
+        ],
+        "correlation": -0.4567
+      }
+    ],
+    "model_B_em_iterations": 34
+  },
+  "loso_grid": {
+    "healthy_single": {
+      "best_beta": 1.0,
+      "best_tau": 3.0,
+      "best_mean_dice": 0.5214,
+      "grid": {
+        "beta=0.00,tau=0.0": 0.0,
+        "beta=0.00,tau=1.0": 0.0,
+        "beta=0.00,tau=2.0": 0.4093,
+        "beta=0.00,tau=3.0": 0.4361,
+        "beta=0.00,tau=4.0": 0.2976,
+        "beta=0.00,tau=5.0": 0.1977,
+        "beta=0.00,tau=6.0": 0.1382,
+        "beta=0.25,tau=0.0": 0.0,
+        "beta=0.25,tau=1.0": 0.0,
+        "beta=0.25,tau=2.0": 0.3851,
+        "beta=0.25,tau=3.0": 0.4896,
+        "beta=0.25,tau=4.0": 0.3383,
+        "beta=0.25,tau=5.0": 0.2201,
+        "beta=0.25,tau=6.0": 0.1488,
+        "beta=0.50,tau=0.0": 0.0,
+        "beta=0.50,tau=1.0": 0.0,
+        "beta=0.50,tau=2.0": 0.3614,
+        "beta=0.50,tau=3.0": 0.5111,
+        "beta=0.50,tau=4.0": 0.3564,
+        "beta=0.50,tau=5.0": 0.2317,
+        "beta=0.50,tau=6.0": 0.1555,
+        "beta=1.00,tau=0.0": 0.0,
+        "beta=1.00,tau=1.0": 0.0,
+        "beta=1.00,tau=2.0": 0.2908,
+        "beta=1.00,tau=3.0": 0.5214,
+        "beta=1.00,tau=4.0": 0.3745,
+        "beta=1.00,tau=5.0": 0.2428,
+        "beta=1.00,tau=6.0": 0.1618,
+        "beta=1.50,tau=0.0": 0.0,
+        "beta=1.50,tau=1.0": 0.0,
+        "beta=1.50,tau=2.0": 0.2713,
+        "beta=1.50,tau=3.0": 0.5143,
+        "beta=1.50,tau=4.0": 0.3829,
+        "beta=1.50,tau=5.0": 0.2486,
+        "beta=1.50,tau=6.0": 0.1647,
+        "beta=2.00,tau=0.0": 0.0,
+        "beta=2.00,tau=1.0": 0.0,
+        "beta=2.00,tau=2.0": 0.2761,
+        "beta=2.00,tau=3.0": 0.5049,
+        "beta=2.00,tau=4.0": 0.3859,
+        "beta=2.00,tau=5.0": 0.2522,
+        "beta=2.00,tau=6.0": 0.1668,
+        "beta=3.00,tau=0.0": 0.0,
+        "beta=3.00,tau=1.0": 0.0,
+        "beta=3.00,tau=2.0": 0.2771,
+        "beta=3.00,tau=3.0": 0.4981,
+        "beta=3.00,tau=4.0": 0.3831,
+        "beta=3.00,tau=5.0": 0.2552,
+        "beta=3.00,tau=6.0": 0.1696
+      }
+    },
+    "healthy_mixture": {
+      "best_beta": 1.0,
+      "best_tau": 2.0,
+      "best_mean_dice": 0.5231,
+      "grid": {
+        "beta=0.00,tau=0.0": 0.1657,
+        "beta=0.00,tau=1.0": 0.4334,
+        "beta=0.00,tau=2.0": 0.4388,
+        "beta=0.00,tau=3.0": 0.3659,
+        "beta=0.00,tau=4.0": 0.294,
+        "beta=0.00,tau=5.0": 0.2274,
+        "beta=0.00,tau=6.0": 0.171,
+        "beta=0.25,tau=0.0": 0.0571,
+        "beta=0.25,tau=1.0": 0.4459,
+        "beta=0.25,tau=2.0": 0.4793,
+        "beta=0.25,tau=3.0": 0.3976,
+        "beta=0.25,tau=4.0": 0.3202,
+        "beta=0.25,tau=5.0": 0.2474,
+        "beta=0.25,tau=6.0": 0.1847,
+        "beta=0.50,tau=0.0": 0.0377,
+        "beta=0.50,tau=1.0": 0.4389,
+        "beta=0.50,tau=2.0": 0.5032,
+        "beta=0.50,tau=3.0": 0.4158,
+        "beta=0.50,tau=4.0": 0.3358,
+        "beta=0.50,tau=5.0": 0.2594,
+        "beta=0.50,tau=6.0": 0.1937,
+        "beta=1.00,tau=0.0": 0.0302,
+        "beta=1.00,tau=1.0": 0.4123,
+        "beta=1.00,tau=2.0": 0.5231,
+        "beta=1.00,tau=3.0": 0.4365,
+        "beta=1.00,tau=4.0": 0.3514,
+        "beta=1.00,tau=5.0": 0.2721,
+        "beta=1.00,tau=6.0": 0.2029,
+        "beta=1.50,tau=0.0": 0.0303,
+        "beta=1.50,tau=1.0": 0.3615,
+        "beta=1.50,tau=2.0": 0.5212,
+        "beta=1.50,tau=3.0": 0.447,
+        "beta=1.50,tau=4.0": 0.3607,
+        "beta=1.50,tau=5.0": 0.2791,
+        "beta=1.50,tau=6.0": 0.2083,
+        "beta=2.00,tau=0.0": 0.0303,
+        "beta=2.00,tau=1.0": 0.3326,
+        "beta=2.00,tau=2.0": 0.516,
+        "beta=2.00,tau=3.0": 0.4485,
+        "beta=2.00,tau=4.0": 0.3664,
+        "beta=2.00,tau=5.0": 0.2844,
+        "beta=2.00,tau=6.0": 0.2122,
+        "beta=3.00,tau=0.0": 0.0303,
+        "beta=3.00,tau=1.0": 0.3301,
+        "beta=3.00,tau=2.0": 0.4943,
+        "beta=3.00,tau=3.0": 0.4446,
+        "beta=3.00,tau=4.0": 0.3701,
+        "beta=3.00,tau=5.0": 0.2902,
+        "beta=3.00,tau=6.0": 0.2169
+      }
+    }
+  },
+  "loso_detail": {
+    "healthy_single": {
+      "beta": 1.0,
+      "tau": 3.0,
+      "per_subject": [
+        {
+          "subject": "mp_aitm5157.2002-09-19",
+          "no_mrf": {
+            "dice": 0.333,
+            "sensitivity": 0.8195,
+            "specificity": 0.9678,
+            "ppv": 0.209,
+            "tp": 3768,
+            "fp": 14262,
+            "fn": 830,
+            "pred_voxels": 18030,
+            "true_voxels": 4598
+          },
+          "with_mrf": {
+            "dice": 0.374,
+            "sensitivity": 0.6609,
+            "specificity": 0.9806,
+            "ppv": 0.2607,
+            "tp": 3039,
+            "fp": 8616,
+            "fn": 1559,
+            "pred_voxels": 11655,
+            "true_voxels": 4598
+          },
+          "lesion_wise": {
+            "true_lesions": 54,
+            "detected": 30,
+            "lesion_sensitivity": 0.5556,
+            "false_positive_clusters": 139
+          },
+          "icm": {
+            "iterations": 7,
+            "changed_per_iter": [
+              7387,
+              1533,
+              335,
+              75,
+              10,
+              1,
+              0
+            ],
+            "converged": true
+          }
+        },
+        {
+          "subject": "mp_cyra4454.1999-08-23",
+          "no_mrf": {
+            "dice": 0.5369,
+            "sensitivity": 0.7228,
+            "specificity": 0.97,
+            "ppv": 0.4271,
+            "tp": 10891,
+            "fp": 14611,
+            "fn": 4177,
+            "pred_voxels": 25502,
+            "true_voxels": 15068
+          },
+          "with_mrf": {
+            "dice": 0.6,
+            "sensitivity": 0.5652,
+            "specificity": 0.9901,
+            "ppv": 0.6393,
+            "tp": 8517,
+            "fp": 4805,
+            "fn": 6551,
+            "pred_voxels": 13322,
+            "true_voxels": 15068
+          },
+          "lesion_wise": {
+            "true_lesions": 172,
+            "detected": 65,
+            "lesion_sensitivity": 0.3779,
+            "false_positive_clusters": 123
+          },
+          "icm": {
+            "iterations": 8,
+            "changed_per_iter": [
+              11555,
+              2510,
+              621,
+              173,
+              71,
+              41,
+              22,
+              9
+            ],
+            "converged": false
+          }
+        },
+        {
+          "subject": "mp_toml5255.1999-08-16",
+          "no_mrf": {
+            "dice": 0.4385,
+            "sensitivity": 0.933,
+            "specificity": 0.9195,
+            "ppv": 0.2866,
+            "tp": 16045,
+            "fp": 39945,
+            "fn": 1153,
+            "pred_voxels": 55990,
+            "true_voxels": 17198
+          },
+          "with_mrf": {
+            "dice": 0.5901,
+            "sensitivity": 0.8857,
+            "specificity": 0.9613,
+            "ppv": 0.4424,
+            "tp": 15233,
+            "fp": 19200,
+            "fn": 1965,
+            "pred_voxels": 34433,
+            "true_voxels": 17198
+          },
+          "lesion_wise": {
+            "true_lesions": 112,
+            "detected": 63,
+            "lesion_sensitivity": 0.5625,
+            "false_positive_clusters": 267
+          },
+          "icm": {
+            "iterations": 8,
+            "changed_per_iter": [
+              22302,
+              4714,
+              1082,
+              376,
+              128,
+              68,
+              28,
+              9
+            ],
+            "converged": false
+          }
+        }
+      ],
+      "mean_dice_no_mrf": 0.4361,
+      "mean_dice_with_mrf": 0.5214,
+      "mrf_gain": 0.0852
+    },
+    "healthy_mixture": {
+      "beta": 1.0,
+      "tau": 2.0,
+      "per_subject": [
+        {
+          "subject": "mp_aitm5157.2002-09-19",
+          "no_mrf": {
+            "dice": 0.3276,
+            "sensitivity": 0.6868,
+            "specificity": 0.974,
+            "ppv": 0.2151,
+            "tp": 3158,
+            "fp": 11525,
+            "fn": 1440,
+            "pred_voxels": 14683,
+            "true_voxels": 4598
+          },
+          "with_mrf": {
+            "dice": 0.3652,
+            "sensitivity": 0.5328,
+            "specificity": 0.9856,
+            "ppv": 0.2777,
+            "tp": 2450,
+            "fp": 6371,
+            "fn": 2148,
+            "pred_voxels": 8821,
+            "true_voxels": 4598
+          },
+          "lesion_wise": {
+            "true_lesions": 54,
+            "detected": 27,
+            "lesion_sensitivity": 0.5,
+            "false_positive_clusters": 170
+          },
+          "icm": {
+            "iterations": 8,
+            "changed_per_iter": [
+              6101,
+              1236,
+              214,
+              61,
+              28,
+              14,
+              3,
+              3
+            ],
+            "converged": false
+          }
+        },
+        {
+          "subject": "mp_cyra4454.1999-08-23",
+          "no_mrf": {
+            "dice": 0.5403,
+            "sensitivity": 0.6847,
+            "specificity": 0.9737,
+            "ppv": 0.4462,
+            "tp": 10317,
+            "fp": 12806,
+            "fn": 4751,
+            "pred_voxels": 23123,
+            "true_voxels": 15068
+          },
+          "with_mrf": {
+            "dice": 0.6018,
+            "sensitivity": 0.5578,
+            "specificity": 0.9908,
+            "ppv": 0.6532,
+            "tp": 8405,
+            "fp": 4462,
+            "fn": 6663,
+            "pred_voxels": 12867,
+            "true_voxels": 15068
+          },
+          "lesion_wise": {
+            "true_lesions": 172,
+            "detected": 70,
+            "lesion_sensitivity": 0.407,
+            "false_positive_clusters": 139
+          },
+          "icm": {
+            "iterations": 7,
+            "changed_per_iter": [
+              10097,
+              1961,
+              421,
+              97,
+              33,
+              9,
+              0
+            ],
+            "converged": true
+          }
+        },
+        {
+          "subject": "mp_toml5255.1999-08-16",
+          "no_mrf": {
+            "dice": 0.4484,
+            "sensitivity": 0.9073,
+            "specificity": 0.9258,
+            "ppv": 0.2978,
+            "tp": 15604,
+            "fp": 36794,
+            "fn": 1594,
+            "pred_voxels": 52398,
+            "true_voxels": 17198
+          },
+          "with_mrf": {
+            "dice": 0.6022,
+            "sensitivity": 0.8893,
+            "specificity": 0.9631,
+            "ppv": 0.4552,
+            "tp": 15294,
+            "fp": 18304,
+            "fn": 1904,
+            "pred_voxels": 33598,
+            "true_voxels": 17198
+          },
+          "lesion_wise": {
+            "true_lesions": 112,
+            "detected": 65,
+            "lesion_sensitivity": 0.5804,
+            "false_positive_clusters": 306
+          },
+          "icm": {
+            "iterations": 8,
+            "changed_per_iter": [
+              19897,
+              3977,
+              916,
+              290,
+              106,
+              31,
+              12,
+              3
+            ],
+            "converged": false
+          }
+        }
+      ],
+      "mean_dice_no_mrf": 0.4388,
+      "mean_dice_with_mrf": 0.5231,
+      "mrf_gain": 0.0843
+    }
+  },
+  "test": {
+    "subject": "mp_royr6403.1998-12-07",
+    "model": "healthy_mixture",
+    "beta": 1.0,
+    "tau": 2.0,
+    "lesion_voxels": 57909,
+    "lesion_volume_ml": 165.68,
+    "clusters": 860,
+    "clusters_ge_3_voxels": 737,
+    "brain_volume_ml": 1829.4,
+    "lesion_load_percent_of_brain": 9.056,
+    "icm": {
+      "iterations": 8,
+      "changed_per_iter": [
+        51462,
+        11913,
+        3321,
+        1171,
+        470,
+        177,
+        59,
+        31
+      ],
+      "converged": false
+    }
+  }
+}

@@ -1,0 +1,41 @@
+loading subjects ...
+  mp_aitm5157.2002-09-19     brain  448174 vox   interior  288952 (64.5%)   lesion  4598 vox, 99.8% inside the interior region
+  mp_cyra4454.1999-08-23     brain  502580 vox   interior  343801 (68.4%)   lesion 15068 vox, 96.2% inside the interior region
+  mp_toml5255.1999-08-16     brain  513283 vox   interior  322055 (62.7%)   lesion 17198 vox, 98.6% inside the interior region
+  mp_royr6403.1998-12-07     brain  639426 vox   interior  429343 (67.1%)
+
+solver equivalence check (icm_binary vs the general K-class icm)
+  beta 0.5 : 3276800 / 3276800 voxels identical  -> MATCH
+  beta 1.0 : 3276800 / 3276800 voxels identical  -> MATCH
+  beta 2.0 : 3276800 / 3276800 voxels identical  -> MATCH
+
+======================================================================================
+MODEL SELECTION BY LEAVE-ONE-SUBJECT-OUT
+  K   = number of Gaussian components for the HEALTHY class
+  rim = white-matter constraint: no lesion within 6 mm of the brain surface
+
+  K    rim   beta   tau   meanDice  meanPPV   meanSens  meanPredML
+  3    no    1.00   2.0   0.4838    0.4395    0.6932    51.0      
+  3    yes   1.00   2.0   0.6262    0.6726    0.6901    32.5      
+  6    no    1.00   2.0   0.5004    0.4270    0.7294    55.0      
+  6    yes   1.00   2.0   0.6597    0.6753    0.7261    34.6      
+  8    no    1.00   2.0   0.4976    0.4340    0.7095    52.3      
+  8    yes   1.00   2.0   0.6594    0.6956    0.7058    32.0      
+
+  SELECTED: K=6  rim=True  beta=1.00  tau=2.0  mean LOSO Dice 0.6597
+
+======================================================================================
+LEAVE-ONE-SUBJECT-OUT DETAIL at the selected configuration
+  mp_aitm5157.2002-09-19     MAP Dice 0.4420 | MRF Dice 0.6301 sens 0.923 ppv 0.478 | vol true  13.2 pred  25.4 ml | lesions 43/54 FPclust 38
+  mp_cyra4454.1999-08-23     MAP Dice 0.6203 | MRF Dice 0.5978 sens 0.467 ppv 0.831 | vol true  43.1 pred  24.2 ml | lesions 46/172 FPclust 19
+  mp_toml5255.1999-08-16     MAP Dice 0.5986 | MRF Dice 0.7511 sens 0.789 ppv 0.717 | vol true  49.2 pred  54.2 ml | lesions 57/112 FPclust 62
+  mean Dice  without MRF 0.5536   with MRF 0.6597   (MRF gain +0.1060)
+
+======================================================================================
+FINAL TEST SEGMENTATION  (models fitted on all three training subjects)
+  lesion volume : 38.53 ml  (13468 voxels, 2.11% of a 1829 ml brain)
+  clusters      : 52 total, 52 with >= 3 voxels, largest 15.06 ml
+  ICM           : 10 iters, converged=True
+  training lesion volumes for comparison: [13.15, 43.11, 49.2] ml
+
+wrote C:\Users\sohan\OneDrive\Documents\Likitha\Practical assignment 6\outputs\05_model_selection.json

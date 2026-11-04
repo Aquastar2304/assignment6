@@ -1,0 +1,453 @@
+{
+  "config": {
+    "ks": [
+      3,
+      6,
+      8
+    ],
+    "betas": [
+      1.0
+    ],
+    "taus": [
+      1.0,
+      2.0,
+      3.0
+    ],
+    "rim_mm": 6.0,
+    "icm_iters": 12,
+    "seed": 0
+  },
+  "solver_equivalence_check": [
+    {
+      "beta": 0.5,
+      "identical_voxels": 3276800,
+      "total": 3276800,
+      "match": true
+    },
+    {
+      "beta": 1.0,
+      "identical_voxels": 3276800,
+      "total": 3276800,
+      "match": true
+    },
+    {
+      "beta": 2.0,
+      "identical_voxels": 3276800,
+      "total": 3276800,
+      "match": true
+    }
+  ],
+  "k_sweep": [
+    {
+      "K": 3,
+      "rim_constraint": false,
+      "beta": 1.0,
+      "tau": 2.0,
+      "mean_dice": 0.4838,
+      "per_subject_dice": [
+        0.3683,
+        0.4557,
+        0.6273
+      ],
+      "mean_ppv": 0.4395,
+      "mean_sensitivity": 0.6932,
+      "mean_predicted_volume_ml": 51.04
+    },
+    {
+      "K": 3,
+      "rim_constraint": true,
+      "beta": 1.0,
+      "tau": 2.0,
+      "mean_dice": 0.6262,
+      "per_subject_dice": [
+        0.6129,
+        0.528,
+        0.7377
+      ],
+      "mean_ppv": 0.6726,
+      "mean_sensitivity": 0.6901,
+      "mean_predicted_volume_ml": 32.49
+    },
+    {
+      "K": 6,
+      "rim_constraint": false,
+      "beta": 1.0,
+      "tau": 2.0,
+      "mean_dice": 0.5004,
+      "per_subject_dice": [
+        0.3743,
+        0.4928,
+        0.6342
+      ],
+      "mean_ppv": 0.427,
+      "mean_sensitivity": 0.7294,
+      "mean_predicted_volume_ml": 54.97
+    },
+    {
+      "K": 6,
+      "rim_constraint": true,
+      "beta": 1.0,
+      "tau": 2.0,
+      "mean_dice": 0.6597,
+      "per_subject_dice": [
+        0.6301,
+        0.5978,
+        0.7511
+      ],
+      "mean_ppv": 0.6753,
+      "mean_sensitivity": 0.7261,
+      "mean_predicted_volume_ml": 34.58
+    },
+    {
+      "K": 8,
+      "rim_constraint": false,
+      "beta": 1.0,
+      "tau": 2.0,
+      "mean_dice": 0.4976,
+      "per_subject_dice": [
+        0.3719,
+        0.4906,
+        0.6303
+      ],
+      "mean_ppv": 0.434,
+      "mean_sensitivity": 0.7095,
+      "mean_predicted_volume_ml": 52.3
+    },
+    {
+      "K": 8,
+      "rim_constraint": true,
+      "beta": 1.0,
+      "tau": 2.0,
+      "mean_dice": 0.6594,
+      "per_subject_dice": [
+        0.6348,
+        0.5951,
+        0.7484
+      ],
+      "mean_ppv": 0.6956,
+      "mean_sensitivity": 0.7058,
+      "mean_predicted_volume_ml": 31.97
+    }
+  ],
+  "final_loso": {
+    "selected": {
+      "dice": 0.6596666666666667,
+      "K": 6,
+      "restrict": true,
+      "beta": 1.0,
+      "tau": 2.0
+    },
+    "per_subject": [
+      {
+        "subject": "mp_aitm5157.2002-09-19",
+        "no_mrf": {
+          "dice": 0.442,
+          "sensitivity": 0.9532,
+          "specificity": 0.9755,
+          "ppv": 0.2877,
+          "tp": 4383,
+          "fp": 10851,
+          "fn": 215,
+          "pred_voxels": 15234,
+          "true_voxels": 4598
+        },
+        "with_mrf": {
+          "dice": 0.6301,
+          "sensitivity": 0.9226,
+          "specificity": 0.9896,
+          "ppv": 0.4785,
+          "tp": 4242,
+          "fp": 4624,
+          "fn": 356,
+          "pred_voxels": 8866,
+          "true_voxels": 4598
+        },
+        "lesion_wise": {
+          "true_lesions": 54,
+          "detected": 43,
+          "lesion_sensitivity": 0.7963,
+          "false_positive_clusters": 38
+        },
+        "icm": {
+          "iterations": 9,
+          "changed_per_iter": [
+            6554,
+            1043,
+            204,
+            51,
+            19,
+            7,
+            3,
+            1,
+            0
+          ],
+          "converged": true
+        },
+        "true_volume_ml": 13.15,
+        "pred_volume_ml": 25.37
+      },
+      {
+        "subject": "mp_cyra4454.1999-08-23",
+        "no_mrf": {
+          "dice": 0.6203,
+          "sensitivity": 0.5816,
+          "specificity": 0.9909,
+          "ppv": 0.6646,
+          "tp": 8763,
+          "fp": 4423,
+          "fn": 6305,
+          "pred_voxels": 13186,
+          "true_voxels": 15068
+        },
+        "with_mrf": {
+          "dice": 0.5978,
+          "sensitivity": 0.4669,
+          "specificity": 0.9971,
+          "ppv": 0.8308,
+          "tp": 7035,
+          "fp": 1433,
+          "fn": 8033,
+          "pred_voxels": 8468,
+          "true_voxels": 15068
+        },
+        "lesion_wise": {
+          "true_lesions": 172,
+          "detected": 46,
+          "lesion_sensitivity": 0.2674,
+          "false_positive_clusters": 19
+        },
+        "icm": {
+          "iterations": 10,
+          "changed_per_iter": [
+            4759,
+            912,
+            182,
+            60,
+            22,
+            13,
+            9,
+            6,
+            1,
+            0
+          ],
+          "converged": true
+        },
+        "true_volume_ml": 43.11,
+        "pred_volume_ml": 24.23
+      },
+      {
+        "subject": "mp_toml5255.1999-08-16",
+        "no_mrf": {
+          "dice": 0.5986,
+          "sensitivity": 0.8002,
+          "specificity": 0.9697,
+          "ppv": 0.4781,
+          "tp": 13762,
+          "fp": 15024,
+          "fn": 3436,
+          "pred_voxels": 28786,
+          "true_voxels": 17198
+        },
+        "with_mrf": {
+          "dice": 0.7511,
+          "sensitivity": 0.7889,
+          "specificity": 0.9892,
+          "ppv": 0.7167,
+          "tp": 13568,
+          "fp": 5363,
+          "fn": 3630,
+          "pred_voxels": 18931,
+          "true_voxels": 17198
+        },
+        "lesion_wise": {
+          "true_lesions": 112,
+          "detected": 57,
+          "lesion_sensitivity": 0.5089,
+          "false_positive_clusters": 62
+        },
+        "icm": {
+          "iterations": 9,
+          "changed_per_iter": [
+            11460,
+            2163,
+            446,
+            101,
+            34,
+            14,
+            6,
+            1,
+            0
+          ],
+          "converged": true
+        },
+        "true_volume_ml": 49.2,
+        "pred_volume_ml": 54.16
+      }
+    ],
+    "mean_dice_no_mrf": 0.5536,
+    "mean_dice_with_mrf": 0.6597,
+    "mrf_gain": 0.106
+  },
+  "test": {
+    "subject": "mp_royr6403.1998-12-07",
+    "K": 6,
+    "rim_constraint": true,
+    "beta": 1.0,
+    "tau": 2.0,
+    "lesion_voxels": 13468,
+    "lesion_volume_ml": 38.53,
+    "brain_volume_ml": 1829.4,
+    "lesion_load_percent": 2.106,
+    "clusters": 52,
+    "clusters_ge_3": 52,
+    "largest_cluster_ml": 15.06,
+    "icm": {
+      "iterations": 10,
+      "changed_per_iter": [
+        5459,
+        845,
+        156,
+        44,
+        19,
+        10,
+        6,
+        5,
+        2,
+        0
+      ],
+      "converged": true
+    }
+  },
+  "healthy_mixture_params": [
+    {
+      "weight": 0.08496,
+      "mean": [
+        0.3639,
+        1.73832
+      ],
+      "cov": [
+        [
+          0.003576,
+          -0.00192
+        ],
+        [
+          -0.00192,
+          0.024081
+        ]
+      ],
+      "correlation": -0.2069
+    },
+    {
+      "weight": 0.13066,
+      "mean": [
+        0.59355,
+        1.50326
+      ],
+      "cov": [
+        [
+          0.017774,
+          -0.015676
+        ],
+        [
+          -0.015676,
+          0.046492
+        ]
+      ],
+      "correlation": -0.5453
+    },
+    {
+      "weight": 0.29171,
+      "mean": [
+        0.84817,
+        1.14529
+      ],
+      "cov": [
+        [
+          0.015424,
+          -0.007172
+        ],
+        [
+          -0.007172,
+          0.018163
+        ]
+      ],
+      "correlation": -0.4285
+    },
+    {
+      "weight": 0.18801,
+      "mean": [
+        0.80105,
+        1.17533
+      ],
+      "cov": [
+        [
+          0.121739,
+          0.099979
+        ],
+        [
+          0.099979,
+          0.245
+        ]
+      ],
+      "correlation": 0.5789
+    },
+    {
+      "weight": 0.29906,
+      "mean": [
+        1.0054,
+        0.97316
+      ],
+      "cov": [
+        [
+          0.007001,
+          -0.002346
+        ],
+        [
+          -0.002346,
+          0.009921
+        ]
+      ],
+      "correlation": -0.2815
+    },
+    {
+      "weight": 0.00559,
+      "mean": [
+        1.30508,
+        1.70323
+      ],
+      "cov": [
+        [
+          0.36537,
+          -0.260851
+        ],
+        [
+          -0.260851,
+          0.378105
+        ]
+      ],
+      "correlation": -0.7018
+    }
+  ],
+  "lesion_params": {
+    "mean": [
+      0.89873,
+      1.53584
+    ],
+    "cov": [
+      [
+        0.02204,
+        -0.021971
+      ],
+      [
+        -0.021971,
+        0.049943
+      ]
+    ],
+    "correlation": -0.6622
+  },
+  "training_counts": {
+    "n_healthy_voxels": 1427173,
+    "n_lesion_voxels": 36864,
+    "prior_lesion": 0.02518
+  }
+}

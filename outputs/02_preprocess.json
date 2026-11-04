@@ -1,0 +1,94 @@
+[
+  {
+    "id": "mp_aitm5157.2002-09-19",
+    "folder": "training",
+    "zooms": [
+      0.9766,
+      0.9766,
+      3.0
+    ],
+    "voxel_volume_ml": 0.0028610231765924254,
+    "otsu_threshold_T2": 23.3311,
+    "head_voxels": 833063,
+    "brain_voxels": 448174,
+    "brain_volume_ml": 1282.2,
+    "brain_fraction_of_head": 0.538,
+    "T1_wm_anchor": 26.708,
+    "T2_wm_anchor": 36.794,
+    "wm_anchor_voxels": 58414,
+    "T1_median_normalised": 0.8692,
+    "T2_median_normalised": 1.1268,
+    "lesion_voxels_total": 4598,
+    "lesion_voxels_in_brain": 4598,
+    "lesion_retained_by_mask": 1.0,
+    "lesion_volume_ml": 13.15
+  },
+  {
+    "id": "mp_cyra4454.1999-08-23",
+    "folder": "training",
+    "zooms": [
+      0.9766,
+      0.9766,
+      3.0
+    ],
+    "voxel_volume_ml": 0.00286102294921875,
+    "otsu_threshold_T2": 25.8931,
+    "head_voxels": 851991,
+    "brain_voxels": 502580,
+    "brain_volume_ml": 1437.9,
+    "brain_fraction_of_head": 0.5899,
+    "T1_wm_anchor": 28.725,
+    "T2_wm_anchor": 41.416,
+    "wm_anchor_voxels": 57339,
+    "T1_median_normalised": 0.8314,
+    "T2_median_normalised": 1.142,
+    "lesion_voxels_total": 15076,
+    "lesion_voxels_in_brain": 15068,
+    "lesion_retained_by_mask": 0.9995,
+    "lesion_volume_ml": 43.11
+  },
+  {
+    "id": "mp_toml5255.1999-08-16",
+    "folder": "training",
+    "zooms": [
+      0.9766,
+      0.9766,
+      3.0
+    ],
+    "voxel_volume_ml": 0.00286102294921875,
+    "otsu_threshold_T2": 23.4704,
+    "head_voxels": 849147,
+    "brain_voxels": 513283,
+    "brain_volume_ml": 1468.5,
+    "brain_fraction_of_head": 0.6045,
+    "T1_wm_anchor": 31.84,
+    "T2_wm_anchor": 37.706,
+    "wm_anchor_voxels": 53754,
+    "T1_median_normalised": 0.8965,
+    "T2_median_normalised": 1.126,
+    "lesion_voxels_total": 17199,
+    "lesion_voxels_in_brain": 17198,
+    "lesion_retained_by_mask": 0.9999,
+    "lesion_volume_ml": 49.2
+  },
+  {
+    "id": "mp_royr6403.1998-12-07",
+    "folder": "testing",
+    "zooms": [
+      0.9766,
+      0.9766,
+      3.0
+    ],
+    "voxel_volume_ml": 0.00286102294921875,
+    "otsu_threshold_T2": 23.1026,
+    "head_voxels": 1001294,
+    "brain_voxels": 639426,
+    "brain_volume_ml": 1829.4,
+    "brain_fraction_of_head": 0.6386,
+    "T1_wm_anchor": 28.876,
+    "T2_wm_anchor": 38.958,
+    "wm_anchor_voxels": 72977,
+    "T1_median_normalised": 0.8073,
+    "T2_median_normalised": 1.0872
+  }
+]

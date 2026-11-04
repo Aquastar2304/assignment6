@@ -1,0 +1,8 @@
+figures written to C:\Users\sohan\OneDrive\Documents\Likitha\Practical assignment 6\outputs\figures
+   fig1_feature_space.png
+   fig2_marginals.png
+   fig3_mrf_effect.png
+   fig4_training_overlay.png
+   fig5_test_result.png
+   fig6_model_selection.png
+lesion map : C:\Users\sohan\OneDrive\Documents\Likitha\Practical assignment 6\outputs\mp_royr6403.1998-12-07.t2_lesions_predicted.nii
